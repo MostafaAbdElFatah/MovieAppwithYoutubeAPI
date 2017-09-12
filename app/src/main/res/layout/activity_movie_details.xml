@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+
+    android:padding="10dp"
+    tools:context="com.mostafaabdel_fatah.movieapp.MovieDetails">
+
+    <ScrollView
+        android:layout_width="348dp"
+        android:layout_height="475dp"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="18dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+
+            <TextView
+                android:id="@+id/movie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Movie Name"
+                android:textColor="@color/white"
+                android:textSize="40dp" />
+
+            <com.google.android.youtube.player.YouTubePlayerView
+                android:id="@+id/trailer"
+                android:layout_width="match_parent"
+                android:layout_height="240dp">
+
+            </com.google.android.youtube.player.YouTubePlayerView>
+
+            <TextView
+                android:id="@+id/tagline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="tagline"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="year"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="year"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/director"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="year"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/cast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Cast:"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <RatingBar
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@android:color/background_light"
+                android:progressBackgroundTint="@android:color/background_light"
+                android:rating="3" />
+
+            <TextView
+                android:id="@+id/story"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Story"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
